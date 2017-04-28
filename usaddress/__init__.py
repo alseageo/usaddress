@@ -60,7 +60,7 @@ DIRECTIONS = set(['n', 's', 'e', 'w',
                   'north', 'south', 'east', 'west',
                   'northeast', 'northwest', 'southeast', 'southwest'])
 
-STREET_NAMES = {
+STREET_NAMES = [
     'allee', 'alley', 'ally', 'aly', 'anex', 'annex', 'annx', 'anx', 'arc',
     'arcade', 'av', 'ave', 'aven', 'avenu', 'avenue', 'avn', 'avnue', 'bayoo',
     'bayou', 'bch', 'beach', 'bend', 'bg', 'bgs', 'blf', 'blfs', 'bluf',
@@ -126,7 +126,7 @@ STREET_NAMES = {
     'villiage', 'vis', 'vist', 'vista', 'vl', 'vlg', 'vlgs', 'vlly', 'vly',
     'vlys', 'vst', 'vsta', 'vw', 'vws', 'walk', 'walks', 'wall', 'way', 'ways',
     'well', 'wells', 'wl', 'wls', 'wy', 'xing', 'xrd', 'xrds',
-}
+]
 try:
     TAGGER = pycrfsuite.Tagger()
     TAGGER.open(MODEL_PATH)
